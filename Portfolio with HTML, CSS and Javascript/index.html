@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website with Codebro</title>
+    <!-- css for data-aos "Fade in animations" -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- js for data-aos "Fade in animations" -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- all links are found in the description of the video -->
+</head>
+
+<body>
+    <div class="center" id="loader"></div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="image/logo.png" alt="company logo" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">
+                            <h3>Home</h3>
+                        </a></li>
+                    <li><a href="#about">
+                            <h3>About</h3>
+                        </a></li>
+                    <li><a href="#services">
+                            <h3>Services</h3>
+                        </a></li>
+                    <li><a href="#portfolio">
+                            <h3>Portfolio</h3>
+                        </a></li>
+                    <li><a href="#contact">
+                            <h3>Contact</h3>
+                        </a></li>
+                    <i class="bi bi-x times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer/Designer</p>
+                <h1>Hi, I'm <span>Codebro</span> From USA</h1>
+            </div>
+            <div class="header-bottom-content">
+                <div>
+                    <a href="cv.pdf" download>Download CV <i class="bi bi-card-text"></i></a>
+                </div>
+                <div>
+                    <a href="#about"> More About Me <i class="bi bi-three-dots"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------- About------------------------>
+    <div id="about" data-aos = "fade-in" data-aos-delay = "200">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/userpic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident mollitia nemo quas
+                        ullam, odio obcaecati inventore dolor animi cupiditate, laudantium minus. A est unde fugiat
+                        quaerat dolor ullam debitis sint reprehenderit magnam pariatur. Perspiciatis aperiam modi, esse
+                        accusamus voluptas labore itaque laboriosam, neque veniam ab, veritatis alias voluptatibus sunt?
+                        Laborum, deleniti reprehenderit? Numquam, officia eius non dignissimos ab aspernatur. Incidunt
+                        minima magnam ducimus quas eum expedita quam ad et!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web/App interfaces.</li>
+                            <li><span>Web Development</span><br> Web app Development</li>
+                            <li><span>App Development</span><br>Android App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-current</span><br>Frontend Website Designer, Paypal.</li>
+                            <li><span>2019-2022</span><br>UI/UX, google</li>
+                            <li><span>2015-2019</span><br>Android/iOS app Development, Microsoft</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>CODEBRO Institution of Technology, USA</li>
+                            <li><span>2017</span><br>MBA Oxford School of Technology.</li>
+                            <li><span>2013</span><br>Android/iOS app Development, Microsoft</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------Services ---------------------->
+    <div id="services" data-aos="fade-right" data-aos-delay = "300">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="bi bi-code-slash"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat magni alias, veniam distinctio
+                        incidunt cupiditate labore.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="bi bi-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat magni alias, veniam distinctio
+                        incidunt cupiditate labore.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="bi bi-app-indicator"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat magni alias, veniam distinctio
+                        incidunt cupiditate labore.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------Portfolio ---------------------->
+
+    <div id="portfolio" data-aos="zoom-in" data-aos-delay="300">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/img 1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented around the world. Download it from playstore</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/img 2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented around the world. Download it from playstore</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/img 3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Blockchain App</h3>
+                        <p>The app connects you to the talented around the world. Download it from playstore</p>
+                        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See More</a>
+        </div>
+    </div>
+
+    <!-------------------Contact ---------------------->
+    <div id="contact" data-aos="fade-up" data-aos-delay="300">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bi bi-envelope-fill"></i>contactme@example.com</p>
+                    <p><i class="bi bi-telephone-fill"></i>+01234567890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <a href="cv.pdf" class="btn btn2" download> Download CV <i class="bi bi-card-text"></i></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name here" required>
+                        <input type="email" name="Email" placeholder="Your Email here" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <!-- span to display error message if input is wrong or not submitted -->
+                        <span id="msg"></span>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Codebro. Made with <i class="bi bi-heart-fill"></i> by Codebro and Easy Tutorials</p>
+        </div>
+    </div>
+
+    <!-- script for loader-->
+    <script>
+        document.onreadystatechange = () => {
+            if(document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loader").style.visibility = "visible";
+            }
+
+            setTimeout(() => {
+                document.querySelector("body").style.visibility= "visible";
+                document.querySelector("#loader").style.display = "none";
+            }, 3000);
+        }
+    </script>
+
+
+    <!-- script for toggle navbar in small screens-->
+    <script>
+        let sidemenu = document.getElementById('sidemenu');
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+    <!-- Javascript codes -->
+
+    <!-- script for tab contents-->
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link');
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- script for contact form-->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx_BLROnSR1VRid-enuqUzpCpAttJzK7eoCZzi59ZBCsTunFFmvsja1BeAee1plLTfj/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message sent successfully'
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 4000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+<script>
+    AOS.init();
+</script>
+</body>
+
+</html>
